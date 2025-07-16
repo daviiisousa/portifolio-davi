@@ -5,7 +5,7 @@ import { RiTeamLine } from "react-icons/ri";
 
 export function Sobre() {
   return (
-    <section className="p-10">
+    <section className="p-10 my-10">
       <div className="flex flex-col items-center text-center">
         <h1 className="text-5xl font-bold ">Sobre Mim</h1>
         <p className="text-2xl mt-5 mb-7 w-[800px] text-gray-500 ">
@@ -14,22 +14,22 @@ export function Sobre() {
         </p>
       </div>
       <div className="flex w-full h-full gap-10">
-        <div className="w-2/5">
+        <div className="w-[50%]">
           <img
-            className="w-auto rounded-2xl h-[400px] shadow-2xl"
+            className="w-full rounded-2xl h-full shadow-2xl"
             src="./imgSobre.jpg"
             alt="Computador com codigos"
           />
         </div>
-        <div className="w-3/5">
-          <p className="text-2xl text-gray-500">
+        <div className="w-[50%]">
+          <p className="text-2xl max-2xl:text-[18px] text-gray-500">
             Com mais de 1 ano de experiência em desenvolvimento web, tenho
             paixão por criar soluções digitais que combinam funcionalidades
             expecional com design elegante. Minha jornada começou com
             curiosidade sobre como as coisas funcionam na web, e hoje trabalho
             com as tecnologias mais modernas do mercado.
           </p>
-          <p className="text-2xl my-5 text-gray-500">
+          <p className="text-2xl my-5 max-2xl:text-[18px] text-gray-500">
             Especializo-me em desenvolvimento FullStack, com foco particular em
             React, Node.js e banco de dados modernos. Acredito que a melhor
             tecnologia é aquela que resolve problemas reais de forma simples e

@@ -4,13 +4,15 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Sobre } from "./components/Sobre";
 import { motion } from "framer-motion";
+import { Habilidades } from "./components/Habilidades";
+import { Projetos } from "./components/Projetos";
 
 export function App() {
   return (
     <div className=" h-screen w-full">
       <Header />
       <main className="h-full w-full ">
-        <section className=" mb-5 w-full h-full bg-linear-65 from-blue-50 to-white">
+        <section className="w-full h-full bg-linear-65 from-blue-50 to-white">
           <motion.div
             className="w-full flex flex-col justify-center items-center h-full"
             initial={{ opacity: 0, y: 0 }}
@@ -52,6 +54,8 @@ export function App() {
           </motion.div>
         </section>
         <Sobre />
+        <Habilidades />
+        <Projetos />
       </main>
     </div>
   );
