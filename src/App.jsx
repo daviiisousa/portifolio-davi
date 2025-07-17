@@ -28,7 +28,12 @@ export function App() {
               incríveis e soluções inovadoras que fazem a diferença
             </p>
             <div className=" flex gap-5 my-5">
-              <Button type={"button"} className={"bg-purple-400 text-white"}>
+              <Button
+                type={"button"}
+                className={
+                  "bg-linear-to-r from-blue-500 to-purple-400 text-white"
+                }
+              >
                 <a href=""> Ver Meus Projetos</a>
               </Button>
               <Button
