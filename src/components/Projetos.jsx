@@ -10,6 +10,7 @@ export function Projetos() {
     "Tailwind",
     "API Gemini",
   ];
+
   const tecnologiasTodo = [
     "React",
     "Typescrit",
@@ -17,8 +18,9 @@ export function Projetos() {
     "Express",
     "Sequelize",
   ];
+
   return (
-    <section className="p-10">
+    <section id="projetos" className="p-10">
       <h2 className="text-5xl font-bold text-center mb-3">
         Projetos em Destaque
       </h2>
@@ -33,14 +35,18 @@ export function Projetos() {
           }
           tecnologias={tecnologiasDesculpaAI}
           titulo={"Desculp.AI"}
+          linkProjeto={"https://desculpai.vercel.app/"}
+          linkProjetoGithub={"https://github.com/daviiisousa/desculpai-web"}
         />
         <CardProjetos
           img={todoImg}
-          titulo={"Todo"}
+          titulo={"Todo Tarefa"}
           descricao={
             "Aplicação web completa (frontend + backend) para gerenciamento de tarefas. O usuário pode criar, editar, concluir e excluir tarefas. Desenvolvido com foco em boas práticas, arquitetura MVC e integração via API RESTful."
           }
           tecnologias={tecnologiasTodo}
+          linkProjeto={'https://todo-tarefa.vercel.app/'}
+          linkProjetoGithub={"https://github.com/daviiisousa/Todo-tarefa"}
         />
       </div>
     </section>

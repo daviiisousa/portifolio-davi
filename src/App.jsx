@@ -34,7 +34,7 @@ export function App() {
                   "bg-linear-to-r from-blue-500 to-purple-400 text-white"
                 }
               >
-                <a href=""> Ver Meus Projetos</a>
+                <a href="#projetos"> Ver Meus Projetos</a>
               </Button>
               <Button
                 type={"button"}
