@@ -2,6 +2,7 @@ import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { IoCode } from "react-icons/io5";
 import { LiaMedalSolid } from "react-icons/lia";
 import { RiTeamLine } from "react-icons/ri";
+import imgSobre from "../assets/imgSobre.jpg"
 
 export function Sobre() {
   return (
@@ -17,7 +18,7 @@ export function Sobre() {
         <div className="w-[50%]">
           <img
             className="w-full rounded-2xl h-full shadow-2xl"
-            src="./imgSobre.jpg"
+            src={imgSobre}
             alt="Computador com codigos"
           />
         </div>

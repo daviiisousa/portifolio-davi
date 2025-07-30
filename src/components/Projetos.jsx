@@ -1,6 +1,7 @@
 import { CardProjetos } from "./cardsUI/CardProjetos";
 import desculpaAIImg from "../assets/projetos/desculpaAI.png";
 import todoImg from "../assets/projetos/Todo.png";
+import automacaoImg from "../assets/projetos/fotoAutomacao.jpg"
 
 export function Projetos() {
   const tecnologiasDesculpaAI = [
@@ -19,6 +20,22 @@ export function Projetos() {
     "Sequelize",
   ];
 
+  const tecnologiasAutomacaoCertificados = [
+    "N8N",
+    "Python",
+    "Render",
+    "Fpdf-lib",
+    "Pillow"
+  ]
+
+  const tecnologiasUserLogin = [
+    "React",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "JWT",
+  ]
+
   return (
     <section id="projetos" className="p-10">
       <h2 className="text-5xl font-bold text-center mb-3">
@@ -27,7 +44,7 @@ export function Projetos() {
       <p className="text-zinc-500 text-lg text-center">
         Uma seleção dos meus trabalhos mais recentes e impactantes
       </p>
-      <div className="grid grid-cols-3 my-10 gap-5">
+      <div className="grid grid-cols-2 my-10 gap-5 py-5">
         <CardProjetos
           img={desculpaAIImg}
           descricao={
@@ -38,7 +55,21 @@ export function Projetos() {
           linkProjeto={"https://desculpai.vercel.app/"}
           linkProjetoGithub={"https://github.com/daviiisousa/desculpai-web"}
         />
+        
         <CardProjetos
+          img={automacaoImg}
+          titulo={"Automação de Certificados"}
+          descricao={
+            "Sistema de automação para geração de certificados personalizados. Preenchimento automático de dados e download dos certificados em PDF."
+          }
+          tecnologias={tecnologiasAutomacaoCertificados}
+          linkProjeto={"https://github.com/daviiisousa/api-certificado.git"}
+          linkProjetoGithub={"https://github.com/daviiisousa/api-certificado.git"}
+          />
+      </div>
+      <h2 className="py-5 text-4xl font-bold text-center">Outros Projetos</h2>
+      <div className="grid grid-cols-3 gap-10 py-5">
+          <CardProjetos
           img={todoImg}
           titulo={"Todo Tarefa"}
           descricao={
@@ -47,6 +78,16 @@ export function Projetos() {
           tecnologias={tecnologiasTodo}
           linkProjeto={'https://todo-tarefa.vercel.app/'}
           linkProjetoGithub={"https://github.com/daviiisousa/Todo-tarefa"}
+        />
+        <CardProjetos
+          img={desculpaAIImg}
+          titulo={"Usuarios e Autenticação"}
+          descricao={
+            "Sistema de gerenciamento de usuários com autenticação JWT. Permite registro, login e gerenciamento de perfis. "
+          }
+          tecnologias={tecnologiasUserLogin}
+          linkProjeto={"https://github.com/daviiisousa/User-Login"}
+          linkProjetoGithub={"https://github.com/daviiisousa/User-Login"}
         />
       </div>
     </section>

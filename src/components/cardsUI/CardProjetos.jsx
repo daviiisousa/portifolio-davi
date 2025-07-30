@@ -3,15 +3,15 @@ import { FaGithub } from "react-icons/fa";
 
 export function CardProjetos({ img, titulo, descricao, tecnologias, linkProjeto, linkProjetoGithub }) {
   return (
-    <div className="w-full h-full flex flex-col shadow-primary hover:shadow-2xl transition-all rounded-2xl">
-      <img className="w-full rounded-t-2xl" src={img} alt={titulo} />
-      <div className="bg-white p-5 rounded-2xl h-full flex flex-col justify-between">
-        <div>
-          <h2 className="text-2xl font-bold">{titulo}</h2>
-          <p className="text-lg my-3 text-zinc-500">{descricao}</p>
-        </div>
-        <div className="self-end ">
-          <ul className="flex gap-3 flex-wrap">
+    <div className="w-full h-[80%] flex flex-col shadow-primary hover:shadow-2xl transition-all rounded-2xl">
+      <div className="w-full h-1/2">
+        <img className="w-full h-full rounded-t-2xl object-cover" src={img} alt={titulo} />
+      </div>
+      <div className="bg-white p-10 rounded-2xl h-full border flex flex-col ">
+          <h2 className="text-3xl font-bold mb-3">{titulo}</h2>
+          <p className="text-lg text-zinc-500 mb-3">{descricao}</p>
+        
+          <ul className="flex gap-3 flex-wrap my-3">
             {tecnologias.map((tecnologia) => (
               <li className="px-3 py-1 bg-linear-to-r from-blue-200 to-red-50 rounded-md text-blue-500 font-medium  h-fit">
                 {tecnologia}
@@ -26,7 +26,7 @@ export function CardProjetos({ img, titulo, descricao, tecnologias, linkProjeto,
               Ver Projetos <GrFormNextLink />
             </a>
           </div>
-        </div>
+        
       </div>
     </div>
   );
