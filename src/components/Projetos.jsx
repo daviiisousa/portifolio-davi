@@ -2,6 +2,7 @@ import { CardProjetos } from "./cardsUI/CardProjetos";
 import desculpaAIImg from "../assets/projetos/desculpaAI.png";
 import todoImg from "../assets/projetos/Todo.png";
 import automacaoImg from "../assets/projetos/fotoAutomacao.jpg"
+import TicketGeneretor from "../assets/projetos/TicketGeneretor.png";
 
 export function Projetos() {
   const tecnologiasDesculpaAI = [
@@ -34,6 +35,12 @@ export function Projetos() {
     "Express",
     "PostgreSQL",
     "JWT",
+  ]
+
+  const tecnologiasTicketGeneretor = [
+    "htnml",
+    "css",
+    "javascript"
   ]
 
   return (
@@ -88,6 +95,16 @@ export function Projetos() {
           tecnologias={tecnologiasUserLogin}
           linkProjeto={"https://github.com/daviiisousa/User-Login"}
           linkProjetoGithub={"https://github.com/daviiisousa/User-Login"}
+        />
+        <CardProjetos
+          img={TicketGeneretor}
+          titulo={"Gerador de Tickets"}
+          descricao={
+            "Aplicação para geração de tickets personalizados. Permite criar tickets com informações dinâmicas e exportar em PDF."
+          }
+          tecnologias={tecnologiasTicketGeneretor}
+          linkProjeto={"https://ticket-generator-kappa.vercel.app/"}
+          linkProjetoGithub={"https://github.com/daviiisousa/Ticket-generator.git"}
         />
       </div>
     </section>
