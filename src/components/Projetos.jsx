@@ -1,8 +1,8 @@
 import { CardProjetos } from "./cardsUI/CardProjetos";
 import desculpaAIImg from "../assets/projetos/desculpaAI.png";
 import todoImg from "../assets/projetos/Todo.png";
-import automacaoImg from "../assets/projetos/fotoAutomacao.jpg"
-import TicketGeneretor from "../assets/projetos/TicketGeneretor.png";
+import automacaoImg from "../assets/projetos/fotoAutomacao.jpg";
+import TicketGeneretor from "../assets/projetos/ticketGeneretor.png";
 
 export function Projetos() {
   const tecnologiasDesculpaAI = [
@@ -26,8 +26,8 @@ export function Projetos() {
     "Python",
     "Render",
     "Fpdf-lib",
-    "Pillow"
-  ]
+    "Pillow",
+  ];
 
   const tecnologiasUserLogin = [
     "React",
@@ -35,13 +35,9 @@ export function Projetos() {
     "Express",
     "PostgreSQL",
     "JWT",
-  ]
+  ];
 
-  const tecnologiasTicketGeneretor = [
-    "htnml",
-    "css",
-    "javascript"
-  ]
+  const tecnologiasTicketGeneretor = ["htnml", "css", "javascript"];
 
   return (
     <section id="projetos" className="p-10">
@@ -62,7 +58,7 @@ export function Projetos() {
           linkProjeto={"https://desculpai.vercel.app/"}
           linkProjetoGithub={"https://github.com/daviiisousa/desculpai-web"}
         />
-        
+
         <CardProjetos
           img={automacaoImg}
           titulo={"Automação de Certificados"}
@@ -71,19 +67,21 @@ export function Projetos() {
           }
           tecnologias={tecnologiasAutomacaoCertificados}
           linkProjeto={"https://github.com/daviiisousa/api-certificado.git"}
-          linkProjetoGithub={"https://github.com/daviiisousa/api-certificado.git"}
-          />
+          linkProjetoGithub={
+            "https://github.com/daviiisousa/api-certificado.git"
+          }
+        />
       </div>
       <h2 className="py-5 text-4xl font-bold text-center">Outros Projetos</h2>
       <div className="grid grid-cols-3 gap-10 py-5">
-          <CardProjetos
+        <CardProjetos
           img={todoImg}
           titulo={"Todo Tarefa"}
           descricao={
             "Aplicação web completa (frontend + backend) para gerenciamento de tarefas. O usuário pode criar, editar, concluir e excluir tarefas. Desenvolvido com foco em boas práticas, arquitetura MVC e integração via API RESTful."
           }
           tecnologias={tecnologiasTodo}
-          linkProjeto={'https://todo-tarefa.vercel.app/'}
+          linkProjeto={"https://todo-tarefa.vercel.app/"}
           linkProjetoGithub={"https://github.com/daviiisousa/Todo-tarefa"}
         />
         <CardProjetos
@@ -104,7 +102,9 @@ export function Projetos() {
           }
           tecnologias={tecnologiasTicketGeneretor}
           linkProjeto={"https://ticket-generator-kappa.vercel.app/"}
-          linkProjetoGithub={"https://github.com/daviiisousa/Ticket-generator.git"}
+          linkProjetoGithub={
+            "https://github.com/daviiisousa/Ticket-generator.git"
+          }
         />
       </div>
     </section>
