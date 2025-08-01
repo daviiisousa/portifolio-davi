@@ -6,6 +6,7 @@ import { Sobre } from "./components/Sobre";
 import { motion } from "framer-motion";
 import { Habilidades } from "./components/Habilidades";
 import { Projetos } from "./components/Projetos";
+import { TrabalharJuntos } from "./components/TrabalhaJuntos";
 
 export function App() {
   return (
@@ -61,6 +62,7 @@ export function App() {
         <Sobre />
         <Habilidades />
         <Projetos />
+        <TrabalharJuntos />
       </main>
     </div>
   );

@@ -1,5 +1,5 @@
 import { GoDeviceDesktop } from "react-icons/go";
-import { CardHabilidades } from "./cardsUI/CardHabilidades";
+import { CardHabilidades } from "./ui/cardsUI/CardHabilidades";
 import { FaDatabase, FaLock } from "react-icons/fa";
 import { IoGitBranchOutline } from "react-icons/io5";
 

@@ -1,4 +1,4 @@
-import { CardProjetos } from "./cardsUI/CardProjetos";
+import { CardProjetos } from "./ui/cardsUI/CardProjetos";
 import desculpaAIImg from "../assets/projetos/desculpaAI.png";
 import todoImg from "../assets/projetos/Todo.png";
 import automacaoImg from "../assets/projetos/fotoAutomacao.jpg";
