@@ -3,6 +3,8 @@ import desculpaAIImg from "../assets/projetos/desculpaAI.png";
 import todoImg from "../assets/projetos/Todo.png";
 import automacaoImg from "../assets/projetos/fotoAutomacao.jpg";
 import TicketGeneretor from "../assets/projetos/ticketGeneretor.png";
+import portifolioImg from "../assets/projetos/portifolio.png";
+import r3fImg from "../assets/projetos/r3f.png";
 
 export function Projetos() {
   const tecnologiasDesculpaAI = [
@@ -39,6 +41,8 @@ export function Projetos() {
 
   const tecnologiasTicketGeneretor = ["htnml", "css", "javascript"];
 
+  const tecnologiasPortifolio = ["React", "Tailwind", "Vite", "javascript"];
+
   return (
     <section id="projetos" className="p-10">
       <h2 className="text-5xl font-bold text-center mb-3">
@@ -73,39 +77,77 @@ export function Projetos() {
         />
       </div>
       <h2 className="py-5 text-4xl font-bold text-center">Outros Projetos</h2>
-      <div className="grid grid-cols-3 gap-10 py-5">
-        <CardProjetos
-          img={todoImg}
-          titulo={"Todo Tarefa"}
-          descricao={
-            "Aplicação web completa (frontend + backend) para gerenciamento de tarefas. O usuário pode criar, editar, concluir e excluir tarefas. Desenvolvido com foco em boas práticas, arquitetura MVC e integração via API RESTful."
-          }
-          tecnologias={tecnologiasTodo}
-          linkProjeto={"https://todo-tarefa.vercel.app/"}
-          linkProjetoGithub={"https://github.com/daviiisousa/Todo-tarefa"}
-        />
-        <CardProjetos
-          img={desculpaAIImg}
-          titulo={"Usuarios e Autenticação"}
-          descricao={
-            "Sistema de gerenciamento de usuários com autenticação JWT. Permite registro, login e gerenciamento de perfis. "
-          }
-          tecnologias={tecnologiasUserLogin}
-          linkProjeto={"https://github.com/daviiisousa/User-Login"}
-          linkProjetoGithub={"https://github.com/daviiisousa/User-Login"}
-        />
-        <CardProjetos
-          img={TicketGeneretor}
-          titulo={"Gerador de Tickets"}
-          descricao={
-            "Aplicação para geração de tickets personalizados. Permite criar tickets com informações dinâmicas e exportar em PDF."
-          }
-          tecnologias={tecnologiasTicketGeneretor}
-          linkProjeto={"https://ticket-generator-kappa.vercel.app/"}
-          linkProjetoGithub={
-            "https://github.com/daviiisousa/Ticket-generator.git"
-          }
-        />
+      <div className="w-full py-5">
+        <div className="flex gap-10 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-zinc-700  scrollbar-thumb-rounded-full ">
+          <div className="flex-shrink-0 w-[500px]">
+            <CardProjetos
+              img={todoImg}
+              titulo={"Todo Tarefa"}
+              descricao={
+                "Aplicação web completa (frontend + backend) para gerenciamento de tarefas. O usuário pode criar, editar, concluir e excluir tarefas. Desenvolvido com foco em boas práticas, arquitetura MVC e integração via API RESTful."
+              }
+              tecnologias={tecnologiasTodo}
+              linkProjeto={"https://todo-tarefa.vercel.app/"}
+              linkProjetoGithub={"https://github.com/daviiisousa/Todo-tarefa"}
+            />
+          </div>
+
+          <div className="flex-shrink-0 w-[500px]">
+            <CardProjetos
+              img={desculpaAIImg}
+              titulo={"Usuarios e Autenticação"}
+              descricao={
+                "Sistema de gerenciamento de usuários com autenticação JWT. Permite registro, login e gerenciamento de perfis."
+              }
+              tecnologias={tecnologiasUserLogin}
+              linkProjeto={"https://github.com/daviiisousa/User-Login"}
+              linkProjetoGithub={"https://github.com/daviiisousa/User-Login"}
+            />
+          </div>
+
+          <div className="flex-shrink-0 w-[500px]">
+            <CardProjetos
+              img={TicketGeneretor}
+              titulo={"Gerador de Tickets"}
+              descricao={
+                "Aplicação para geração de tickets personalizados. Permite criar tickets com informações dinâmicas e exportar em PDF."
+              }
+              tecnologias={tecnologiasTicketGeneretor}
+              linkProjeto={"https://ticket-generator-kappa.vercel.app/"}
+              linkProjetoGithub={
+                "https://github.com/daviiisousa/Ticket-generator.git"
+              }
+            />
+          </div>
+          <div className="flex-shrink-0 w-[500px]">
+            <CardProjetos
+              img={portifolioImg}
+              titulo={"Portfólio Pessoal"}
+              descricao={
+                "Meu portfólio pessoal, onde apresento meus projetos, habilidades e experiências. Desenvolvido com foco em design responsivo e usabilidade."
+              }
+              tecnologias={tecnologiasPortifolio}
+              linkProjeto={"https://portifolio-davi-rose.vercel.app/"}
+              linkProjetoGithub={
+                "https://github.com/daviiisousa/portifolio-davi"
+              }
+            />
+          </div>
+          <div className="flex-shrink-0 w-[500px]">
+            <CardProjetos
+              img={r3fImg}
+              titulo={"Ref + Framer Motion"}
+              descricao={
+                "Projeto 3D interativo utilizando React Three Fiber e Framer Motion. Criação de animações e interações avançadas para uma experiência imersiva."
+              }
+              tecnologias={tecnologiasPortifolio}
+              linkProjeto={"https://poc-r3f-framer.vercel.app/"}
+              linkProjetoGithub={
+                "https://github.com/daviiisousa/poc-R3f-Framer"
+              }
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
