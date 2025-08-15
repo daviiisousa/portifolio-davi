@@ -1,4 +1,4 @@
-import { Button } from "./components/Button";
+import { Button } from "./components/ui/Button";
 import { Header } from "./components/layout/Header";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -29,22 +29,10 @@ export function App() {
               incríveis e soluções inovadoras que fazem a diferença
             </p>
             <div className=" flex gap-5 my-5">
-              <Button
-                type={"button"}
-                className={
-                  "bg-linear-to-r from-blue-500 to-purple-400 text-white"
-                }
-              >
+              <Button type={"button"} theme={"gradient"}>
                 <a href="#projetos"> Ver Meus Projetos</a>
               </Button>
-              <Button
-                type={"button"}
-                className={
-                  "bg-white border-2 border-gray-300 text-gray-700 font-medium"
-                }
-              >
-                Download CV
-              </Button>
+              <Button type={"button"}>Download CV</Button>
             </div>
             <div className="flex items-center my-5 gap-5">
               <a href="">

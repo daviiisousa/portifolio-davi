@@ -2,7 +2,8 @@ import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { IoCode } from "react-icons/io5";
 import { LiaMedalSolid } from "react-icons/lia";
 import { RiTeamLine } from "react-icons/ri";
-import imgSobre from "../assets/imgSobre.jpg"
+import imgSobre from "../assets/imgSobre.jpg";
+import { IconButton } from "./ui/iconButton";
 
 export function Sobre() {
   return (
@@ -37,54 +38,46 @@ export function Sobre() {
             eficiente
           </p>
           <div className="grid grid-cols-2 gap-5">
-            <div className="flex gap-3 items-center">
-              <IoCode
-                size={50}
-                className="text-blue-500 rounded-md bg-blue-200 p-3"
-              />
-              <div className="flex flex-col">
-                <h3 className="font-medium text-zinc-900 text-[18px]">
-                  Clean Code
-                </h3>
-                <p className="text-zinc-500">Código limpo e manutenível</p>
-              </div>
-            </div>
-            <div className="flex gap-3 items-center">
-              <RiTeamLine
-                size={50}
-                className="text-green-500 rounded-md bg-green-200 p-3"
-              />
-              <div className="flex flex-col">
-                <h3 className="font-medium text-zinc-900 text-[18px]">
-                  Colaboração
-                </h3>
-                <p className="text-zinc-500">Trabalho em equipe eficiente</p>
-              </div>
-            </div>
-            <div className="flex gap-3 items-center">
-              <HiOutlineRocketLaunch
-                size={50}
-                className="text-purple-500 rounded-md bg-purple-200 p-3 "
-              />
-              <div className="flex flex-col">
-                <h3 className="font-medium text-zinc-900 text-[18px]">
-                  Perfomance
-                </h3>
-                <p className="text-zinc-500">Aplicações rápidas e otimizadas</p>
-              </div>
-            </div>
-            <div className="flex gap-3 items-center">
-              <LiaMedalSolid
-                size={50}
-                className="text-orange-500 rounded-md bg-orange-200 p-3"
-              />
-              <div className="flex flex-col">
-                <h3 className="font-medium text-zinc-900 text-[18px]">
-                  Qualidade
-                </h3>
-                <p className="text-zinc-500">Padrões de excelência</p>
-              </div>
-            </div>
+            <IconButton
+              icon={
+                <IoCode
+                  size={50}
+                  className="text-blue-500 rounded-md bg-blue-200 p-3"
+                />
+              }
+              title="Código Limpo"
+              description="Código limpo e manutenível"
+            />
+            <IconButton
+              icon={
+                <RiTeamLine
+                  size={50}
+                  className="text-green-500 rounded-md bg-green-200 p-3"
+                />
+              }
+              title="Trabalho em Equipe"
+              description="Colaboração eficaz"
+            />
+            <IconButton
+              icon={
+                <HiOutlineRocketLaunch
+                  size={50}
+                  className="text-purple-500 rounded-md bg-purple-200 p-3"
+                />
+              }
+              title={"Perfomance"}
+              description={"APlicação rapidas e otimizadas"}
+            />
+            <IconButton
+              icon={
+                <LiaMedalSolid
+                  size={50}
+                  className="text-yellow-500 rounded-md bg-yellow-200 p-3"
+                />
+              }
+              title={"Qualidade"}
+              description={"Padroẽs de Exelência"}
+            />
           </div>
         </div>
       </div>
