@@ -7,7 +7,10 @@ export function CardHabilidades({ icon, titulo, habilidades }) {
       </div>
       <ul>
         {habilidades.map((itens) => (
-          <li className="bg-zinc-100 p-3 rounded-md mb-3 font-medium hover:bg-zinc-300 transition-all">
+          <li
+            key={itens}
+            className="bg-zinc-100 p-3 rounded-md mb-3 font-medium hover:bg-zinc-300 transition-all"
+          >
             {itens}
           </li>
         ))}

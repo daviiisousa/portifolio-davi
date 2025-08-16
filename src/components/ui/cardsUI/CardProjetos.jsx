@@ -25,7 +25,10 @@ export function CardProjetos({
         </p>
         <ul className="flex flex-wrap gap-3">
           {tecnologias.map((tecnologia) => (
-            <li className="px-3 py-1 bg-linear-to-r from-blue-200 to-red-50 rounded-md text-blue-500 font-medium h-fit">
+            <li
+              key={tecnologia}
+              className="px-3 py-1 bg-linear-to-r from-blue-200 to-red-50 rounded-md text-blue-500 font-medium h-fit"
+            >
               {tecnologia}
             </li>
           ))}

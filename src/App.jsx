@@ -7,13 +7,14 @@ import { motion } from "framer-motion";
 import { Habilidades } from "./components/Habilidades";
 import { Projetos } from "./components/Projetos";
 import { TrabalharJuntos } from "./components/TrabalhaJuntos";
+import { Footer } from "./components/layout/Footer";
 
 export function App() {
   return (
-    <div className=" h-screen w-full">
+    <div className="w-full flex flex-col min-h-screen">
       <Header />
       <main className="h-full w-full ">
-        <section className="w-full h-full bg-linear-65 from-blue-50 to-white">
+        <section className="w-full h-full py-30 bg-linear-65 from-blue-50 to-white">
           <motion.div
             className="w-full flex flex-col justify-center items-center h-full"
             initial={{ opacity: 0, y: 0 }}
@@ -52,6 +53,7 @@ export function App() {
         <Projetos />
         <TrabalharJuntos />
       </main>
+      <Footer />
     </div>
   );
 }
