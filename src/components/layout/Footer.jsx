@@ -1,4 +1,4 @@
-import { textGradient } from "../../utils/style";
+import { gradient } from "../../utils/style";
 import { IconButton } from "../ui/iconButton";
 import { LuGithub } from "react-icons/lu";
 import { CiLinkedin } from "react-icons/ci";
@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="w-full p-10 bg-gray-950  grid grid-cols-[700px_1fr_1fr] gap-5 text-white">
       <div className="  space-y-5">
-        <h2 className={`text-3xl ${textGradient} font-bold `}>
+        <h2 className={`text-3xl ${gradient.textGradientPrimary} font-bold `}>
           Davi Sousa Alves
         </h2>
         <p className="text-gray-400 text-lg">
@@ -15,35 +15,42 @@ export function Footer() {
           incríveis. Sempre em busca de novos desafios e tecnologias
         </p>
         <div className="flex items-center gap-3">
-          <IconButton
-            icon={
-              <LuGithub size={50} className="p-3 rounded-2xl bg-gray-800" />
-            }
-          />
-          <IconButton
-            icon={
-              <CiLinkedin size={50} className="p-3 rounded-2xl bg-gray-800" />
-            }
-          />
+          <a href="https://github.com/daviiisousa" target="_blanck">
+            <IconButton
+              icon={
+                <LuGithub size={50} className="p-3 rounded-2xl bg-gray-800" />
+              }
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/davi-sousa-alves"
+            target="_blanck"
+          >
+            <IconButton
+              icon={
+                <CiLinkedin size={50} className="p-3 rounded-2xl bg-gray-800" />
+              }
+            />
+          </a>
         </div>
       </div>
       <div className=" space-y-5">
         <h2 className="text-2xl font-medium">Navegação</h2>
         <ul className="text-gray-400 space-y-3 text-lg">
           <li>
-            <a href="">Início</a>
+            <a href="#inicio">Início</a>
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="#sobre">Sobre</a>
           </li>
           <li>
-            <a href="">Habilidades</a>
+            <a href="#habilidades">Habilidades</a>
           </li>
           <li>
-            <a href="">Projetos</a>
+            <a href="#projetos">Projetos</a>
           </li>
           <li>
-            <a href="">Contato</a>
+            <a href="#contato">Contato</a>
           </li>
         </ul>
       </div>
@@ -52,7 +59,7 @@ export function Footer() {
         <div className="text-gray-400 space-y-3 text-lg">
           <p>sousadavi248@gmail.com</p>
           <p>+55 85 98787-7534</p>
-          <p>Ceara - Fortaleza</p>
+          <p>Brasil, Ceará - Fortaleza</p>
         </div>
       </div>
       <hr className="col-span-3 text-gray-500" />

@@ -1,5 +1,6 @@
 import { GrFormNextLink } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
+import { gradient } from "../../../utils/style";
 
 export function CardProjetos({
   img,
@@ -27,7 +28,7 @@ export function CardProjetos({
           {tecnologias.map((tecnologia) => (
             <li
               key={tecnologia}
-              className="px-3 py-1 bg-linear-to-r from-blue-200 to-red-50 rounded-md text-blue-500 font-medium h-fit"
+              className={`px-3 py-1 ${gradient.bgGradientSecondary} rounded-md text-blue-500 font-medium h-fit`}
             >
               {tecnologia}
             </li>

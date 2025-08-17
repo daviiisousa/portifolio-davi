@@ -5,8 +5,32 @@ import automacaoImg from "../assets/projetos/fotoAutomacao.jpg";
 import TicketGeneretor from "../assets/projetos/ticketGeneretor.png";
 import portifolioImg from "../assets/projetos/portifolio.png";
 import r3fImg from "../assets/projetos/r3f.png";
+import { useRef, useState } from "react";
 
 export function Projetos() {
+  const scrollRef = useRef();
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e) => {
+    if (!scrollRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseUp = () => setIsDragging(false);
+  const handleMouseLeave = () => setIsDragging(false);
+
+  const handleMouseMove = (e) => {
+    if (!isDragging || !scrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 1; // velocidade do arrasto
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
+
   const tecnologiasDesculpaAI = [
     "React",
     "Prisma",
@@ -78,7 +102,14 @@ export function Projetos() {
       </div>
       <h2 className="py-5 text-4xl font-bold text-center">Outros Projetos</h2>
       <div className="w-full py-5">
-        <div className="flex gap-10 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-zinc-700  scrollbar-thumb-rounded-full ">
+        <div
+          ref={scrollRef}
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseLeave}
+          onMouseMove={handleMouseMove}
+          className="flex gap-10 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-zinc-700  scrollbar-thumb-rounded-full select-none "
+        >
           <div className="flex-shrink-0 w-[500px]">
             <CardProjetos
               img={todoImg}
