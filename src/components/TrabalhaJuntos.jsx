@@ -65,22 +65,29 @@ export function TrabalharJuntos() {
           <div className="space-y-3">
             <h3 className="text-[18px] font-medium">Me encontre nas redes</h3>
             <div className="flex gap-2">
-              <IconButton
-                icon={
-                  <FiGithub
-                    size={50}
-                    className="p-3 rounded-md shadow-primary"
-                  />
-                }
-              />
-              <IconButton
-                icon={
-                  <CiLinkedin
-                    size={50}
-                    className="p-3 rounded-md shadow-primary text-blue-500"
-                  />
-                }
-              />
+              <a href="https://github.com/daviiisousa" target="_blanck">
+                <IconButton
+                  icon={
+                    <FiGithub
+                      size={50}
+                      className="p-3 rounded-md shadow-primary"
+                    />
+                  }
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/davi-sousa-alves"
+                target="_blanck"
+              >
+                <IconButton
+                  icon={
+                    <CiLinkedin
+                      size={50}
+                      className="p-3 rounded-md shadow-primary text-blue-500"
+                    />
+                  }
+                />
+              </a>
             </div>
           </div>
         </div>

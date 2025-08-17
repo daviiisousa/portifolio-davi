@@ -14,7 +14,7 @@ export function Footer() {
           Desenvolvedor Full Stack apaixonado por criar experiências digitais
           incríveis. Sempre em busca de novos desafios e tecnologias
         </p>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-3">
           <IconButton
             icon={
               <LuGithub size={50} className="p-3 rounded-2xl bg-gray-800" />
