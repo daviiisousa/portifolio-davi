@@ -7,7 +7,7 @@ import { IconButton } from "./ui/iconButton";
 
 export function Sobre() {
   return (
-    <section className="p-10 my-10">
+    <section id="sobre" className="p-10 my-10">
       <div className="flex flex-col items-center text-center">
         <h1 className="text-5xl font-bold ">Sobre Mim</h1>
         <p className="text-2xl mt-5 mb-7 w-[800px] text-gray-500 ">

@@ -5,22 +5,19 @@ export function Header() {
       <nav className="">
         <ul className="flex gap-5 font-medium">
           <li>
-            <a href="">Início</a>
+            <a href="#inicio">Início</a>
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="#sobre">Sobre</a>
           </li>
           <li>
-            <a href="">Habilidades</a>
+            <a href="#habilidades">Habilidades</a>
           </li>
           <li>
-            <a href="">Projetos</a>
+            <a href="#projetos">Projetos</a>
           </li>
           <li>
-            <a href="">Experiência</a>
-          </li>
-          <li>
-            <a href="">Contato</a>
+            <a href="#contato">Contato</a>
           </li>
         </ul>
       </nav>

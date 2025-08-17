@@ -10,7 +10,10 @@ import { CiLinkedin } from "react-icons/ci";
 
 export function TrabalharJuntos() {
   return (
-    <section className="w-full bg-linear-65 from-blue-50 to-white p-10">
+    <section
+      id="contato"
+      className="w-full bg-linear-65 from-blue-50 to-white p-10"
+    >
       <div className="flex flex-col items-center justify-center h-full">
         <h1 className="text-6xl  font-bold p-10">Vamos Trabalhar Juntos</h1>
         <p className="text-2xl text-center text-zinc-500 max-w-1/2 mb-10">

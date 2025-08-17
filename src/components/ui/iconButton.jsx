@@ -1,6 +1,6 @@
 export function IconButton({ icon, title, description }) {
   return (
-    <div className="flex gap-3 items-center">
+    <div className="flex gap-3 items-center cursor-pointer">
       {icon}
       <div className="flex flex-col">
         <h3 className="font-medium text-zinc-900 text-[18px]">{title}</h3>
