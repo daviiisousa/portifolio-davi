@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { gradient } from "../../utils/style";
+import { motion } from "framer-motion";
 
 export function Header() {
   const [modal, setModal] = useState(false);
@@ -37,7 +38,12 @@ export function Header() {
         className="text-gray-500 cursor-pointer md:hidden"
       />
       {modal && (
-        <div className="absolute top-12 right-0 bg-white shadow-lg rounded-md p-5">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          className="absolute top-12 right-0 bg-white shadow-lg rounded-md p-5"
+        >
           <ul className="flex flex-col gap-2">
             <li className="hover:text-blue-500">
               <a href="#inicio">Início</a>
@@ -55,7 +61,7 @@ export function Header() {
               <a href="#contato">Contato</a>
             </li>
           </ul>
-        </div>
+        </motion.div>
       )}
     </header>
   );

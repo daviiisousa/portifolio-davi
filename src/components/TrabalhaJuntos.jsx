@@ -34,7 +34,7 @@ export function TrabalharJuntos() {
             conversar sobre tecnologia, desenvolvimento ou qualquer ideia
             interessante.
           </p>
-          <div className="flex flex-col gap-5 max-md:flex-row max-md:justify-center max-md:text-left flex-wrap">
+          <div className="flex flex-col gap-5 max-md:flex-row max-md:text-left flex-wrap">
             <IconButton
               icon={
                 <MdOutlineEmail

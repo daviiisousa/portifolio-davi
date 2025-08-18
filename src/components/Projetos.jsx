@@ -6,6 +6,8 @@ import TicketGeneretor from "../assets/projetos/ticketGeneretor.png";
 import portifolioImg from "../assets/projetos/portifolio.png";
 import r3fImg from "../assets/projetos/r3f.png";
 import { useRef, useState } from "react";
+import { FaRegHandPointRight } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 export function Projetos() {
   const scrollRef = useRef();
@@ -103,6 +105,20 @@ export function Projetos() {
       <h2 className="py-5 text-4xl font-bold text-center max-sm:text-3xl">
         Outros Projetos
       </h2>
+      <motion.div
+        initial={{ x: 0 }}
+        animate={{ x: 10 }}
+        transition={{
+          duration: 1,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
+      >
+        <FaRegHandPointRight
+          size={25}
+          className="text-zinc-500 md:hidden mx-auto"
+        />
+      </motion.div>
       <div className="w-full py-5">
         <div
           ref={scrollRef}
@@ -112,7 +128,7 @@ export function Projetos() {
           onMouseMove={handleMouseMove}
           className="flex gap-10 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-zinc-700  scrollbar-thumb-rounded-full select-none "
         >
-          <div className="flex-shrink-0 w-[500px] ">
+          <div className="flex-shrink-0 w-[500px] max-sm:w-full">
             <CardProjetos
               img={todoImg}
               titulo={"Todo Tarefa"}
@@ -125,7 +141,7 @@ export function Projetos() {
             />
           </div>
 
-          <div className="flex-shrink-0 w-[500px]">
+          <div className="flex-shrink-0 w-[500px] max-sm:w-full">
             <CardProjetos
               img={desculpaAIImg}
               titulo={"Usuarios e Autenticação"}
@@ -138,7 +154,7 @@ export function Projetos() {
             />
           </div>
 
-          <div className="flex-shrink-0 w-[500px]">
+          <div className="flex-shrink-0 w-[500px] max-sm:w-full">
             <CardProjetos
               img={TicketGeneretor}
               titulo={"Gerador de Tickets"}
@@ -152,7 +168,7 @@ export function Projetos() {
               }
             />
           </div>
-          <div className="flex-shrink-0 w-[500px]">
+          <div className="flex-shrink-0 w-[500px] max-sm:w-full">
             <CardProjetos
               img={portifolioImg}
               titulo={"Portfólio Pessoal"}
@@ -166,7 +182,7 @@ export function Projetos() {
               }
             />
           </div>
-          <div className="flex-shrink-0 w-[500px]">
+          <div className="flex-shrink-0 w-[500px] max-sm:w-full">
             <CardProjetos
               img={r3fImg}
               titulo={"Ref + Framer Motion"}
