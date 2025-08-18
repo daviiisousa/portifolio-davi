@@ -19,13 +19,13 @@ export function Habilidades() {
       id="habilidades"
       className="bg-linear-65 from-blue-50 to-white p-10"
     >
-      <h2 className="text-5xl font-bold text-center mb-5">
+      <h2 className="text-5xl font-bold text-center mb-5 max-sm:text-4xl">
         Habilidades Técnicas
       </h2>
-      <p className="text-center mb-10 text-zinc-500 text-lg">
+      <p className="text-center mb-10 text-zinc-500 text-lg max-sm:text-sm">
         Tecnologias e ferramentas que domino para criar soluções completas
       </p>
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-2 gap-10 max-sm:gap-5 max-sm:grid-cols-1">
         <CardHabilidades
           titulo={"Frontend"}
           icon={<GoDeviceDesktop size={25} className="text-blue-500" />}

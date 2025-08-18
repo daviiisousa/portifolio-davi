@@ -12,7 +12,7 @@ export function CardProjetos({
 }) {
   return (
     <div className="w-full h-full flex flex-col shadow-primary hover:shadow-2xl transition-all rounded-2xl">
-      <div className="w-full h-[50%]">
+      <div className="w-full h-[50%] max-lg:h-[300px] overflow-hidden rounded-t-2xl">
         <img
           className="w-full h-full rounded-t-2xl object-cover"
           src={img}
@@ -20,8 +20,8 @@ export function CardProjetos({
         />
       </div>
       <div className="bg-white p-5 rounded-2xl h-[50%] flex flex-col">
-        <h2 className="text-3xl font-bold mb-2">{titulo}</h2>
-        <p className="text-lg text-zinc-500 h-[60%] overflow-y-auto mb-2 scrollbar-thin  scrollbar-thumb-zinc-700 scrollbar-thumb-rounded-full">
+        <h2 className="text-3xl font-bold mb-2 max-sm:text-2xl">{titulo}</h2>
+        <p className="text-lg text-zinc-500 h-[60%] overflow-y-auto mb-2 scrollbar-thin  scrollbar-thumb-zinc-700 scrollbar-thumb-rounded-full max-sm:text-sm">
           {descricao}
         </p>
         <ul className="flex flex-wrap gap-3">

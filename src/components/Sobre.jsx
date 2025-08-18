@@ -9,8 +9,8 @@ export function Sobre() {
   return (
     <section id="sobre" className="p-10 my-10">
       <div className="flex flex-col items-center text-center">
-        <h1 className="text-5xl font-bold ">Sobre Mim</h1>
-        <p className="text-2xl mt-5 mb-7 max-w-[800px] text-gray-500 max-lg:text-lg">
+        <h1 className="text-5xl font-bold max-sm:text-4xl ">Sobre Mim</h1>
+        <p className="text-2xl mt-5 mb-7 max-w-[800px] text-gray-500 max-lg:text-lg max-sm:text-sm">
           Sou um desenvolvedor apaixonado por tecnologia e inovação, sempre em
           busca de novos desafios e oportunidades para crescer.
         </p>
@@ -37,7 +37,7 @@ export function Sobre() {
             tecnologia é aquela que resolve problemas reais de forma simples e
             eficiente
           </p>
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-2 gap-5 max-sm:grid-cols-1">
             <IconButton
               icon={
                 <IoCode

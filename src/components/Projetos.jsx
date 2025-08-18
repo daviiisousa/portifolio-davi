@@ -69,13 +69,13 @@ export function Projetos() {
 
   return (
     <section id="projetos" className="p-10">
-      <h2 className="text-5xl font-bold text-center mb-3">
+      <h2 className="text-5xl font-bold text-center mb-3 max-sm:text-4xl">
         Projetos em Destaque
       </h2>
       <p className="text-zinc-500 text-lg text-center">
         Uma seleção dos meus trabalhos mais recentes e impactantes
       </p>
-      <div className="grid grid-cols-2 my-10 gap-5 py-5">
+      <div className="grid grid-cols-2 my-10 gap-5 py-5 max-lg:flex max-lg:flex-col">
         <CardProjetos
           img={desculpaAIImg}
           descricao={
@@ -100,7 +100,9 @@ export function Projetos() {
           }
         />
       </div>
-      <h2 className="py-5 text-4xl font-bold text-center">Outros Projetos</h2>
+      <h2 className="py-5 text-4xl font-bold text-center max-sm:text-3xl">
+        Outros Projetos
+      </h2>
       <div className="w-full py-5">
         <div
           ref={scrollRef}
@@ -110,7 +112,7 @@ export function Projetos() {
           onMouseMove={handleMouseMove}
           className="flex gap-10 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-zinc-700  scrollbar-thumb-rounded-full select-none "
         >
-          <div className="flex-shrink-0 w-[500px]">
+          <div className="flex-shrink-0 w-[500px] ">
             <CardProjetos
               img={todoImg}
               titulo={"Todo Tarefa"}
