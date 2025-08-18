@@ -15,14 +15,16 @@ export function TrabalharJuntos() {
       className="w-full bg-linear-65 from-blue-50 to-white p-10"
     >
       <div className="flex flex-col items-center justify-center h-full">
-        <h1 className="text-6xl  font-bold p-10">Vamos Trabalhar Juntos</h1>
-        <p className="text-2xl text-center text-zinc-500 max-w-1/2 mb-10">
+        <h1 className="text-6xl font-bold py-10 max-lg:text-4xl">
+          Vamos Trabalhar Juntos
+        </h1>
+        <p className="text-2xl text-center text-zinc-500 max-w-1/2 mb-10 max-lg:text-lg max-md:max-w-full">
           Tem um projeto em mente? Adoraria saber mais sobre sua ideia e como
           posso ajudar a torná-la realidade.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-10">
-        <div className="space-y-3">
+      <div className="grid grid-cols-2 gap-10 max-md:flex max-md:flex-col ">
+        <div className="space-y-3 max-md:text-center">
           <h2 className="text-2xl font-bold">Entre em Contato</h2>
           <p className="text-lg text-zinc-500 ">
             Estou sempre aberto a discutir novos projetos, oportunidades
@@ -30,7 +32,7 @@ export function TrabalharJuntos() {
             conversar sobre tecnologia, desenvolvimento ou qualquer ideia
             interessante.
           </p>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 max-md:flex-row max-md:justify-center max-md:text-left flex-wrap">
             <IconButton
               icon={
                 <MdOutlineEmail
@@ -64,7 +66,7 @@ export function TrabalharJuntos() {
           </div>
           <div className="space-y-3">
             <h3 className="text-[18px] font-medium">Me encontre nas redes</h3>
-            <div className="flex gap-2">
+            <div className="flex gap-2 max-md:justify-center">
               <a href="https://github.com/daviiisousa" target="_blanck">
                 <IconButton
                   icon={

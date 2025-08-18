@@ -1,9 +1,9 @@
 export function CardHabilidades({ icon, titulo, habilidades }) {
   return (
     <div className="bg-white rounded-md w-full h-fit p-5 hover:scale-105 transition-all shadow-primary hover:shadow-2xl">
-      <div className="flex items-center  gap-5 mb-5">
+      <div className="flex items-center max-sm:flex-col gap-5 mb-5">
         <div className="bg-zinc-100 p-3 rounded-md">{icon}</div>
-        <h1 className="text-2xl font-bold">{titulo}</h1>
+        <h1 className="text-2xl max-sm:text-lg font-bold">{titulo}</h1>
       </div>
       <ul>
         {habilidades.map((itens) => (

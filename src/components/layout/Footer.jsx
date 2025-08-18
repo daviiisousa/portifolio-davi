@@ -5,8 +5,8 @@ import { CiLinkedin } from "react-icons/ci";
 
 export function Footer() {
   return (
-    <footer className="w-full p-10 bg-gray-950  grid grid-cols-[700px_1fr_1fr] gap-5 text-white">
-      <div className="  space-y-5">
+    <footer className="w-full p-10 bg-gray-950  grid grid-cols-[700px_1fr_1fr] gap-5 text-white max-xl:flex max-xl:flex-col ">
+      <div className="space-y-5">
         <h2 className={`text-3xl ${gradient.textGradientPrimary} font-bold `}>
           Davi Sousa Alves
         </h2>

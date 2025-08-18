@@ -43,7 +43,7 @@ export function CardProjetos({
             target="_blank"
             className="text-lg text-blue-500 flex items-center my-5 cursor-pointer hover:text-blue-700 transition-all"
           >
-            Ver Projetos <GrFormNextLink />
+            Ver Projeto <GrFormNextLink />
           </a>
         </div>
       </div>

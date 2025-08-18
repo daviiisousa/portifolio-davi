@@ -10,20 +10,20 @@ export function Sobre() {
     <section id="sobre" className="p-10 my-10">
       <div className="flex flex-col items-center text-center">
         <h1 className="text-5xl font-bold ">Sobre Mim</h1>
-        <p className="text-2xl mt-5 mb-7 w-[800px] text-gray-500 ">
+        <p className="text-2xl mt-5 mb-7 max-w-[800px] text-gray-500 max-lg:text-lg">
           Sou um desenvolvedor apaixonado por tecnologia e inovação, sempre em
           busca de novos desafios e oportunidades para crescer.
         </p>
       </div>
-      <div className="flex w-full h-full gap-10">
-        <div className="w-[50%]">
+      <div className="flex w-full h-full gap-10 max-lg:flex-col ">
+        <div className="w-[50%] max-lg:w-full">
           <img
             className="w-full rounded-2xl h-full shadow-2xl"
             src={imgSobre}
             alt="Computador com codigos"
           />
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] max-lg:w-full">
           <p className="text-2xl max-2xl:text-[18px] text-gray-500">
             Com mais de 1 ano de experiência em desenvolvimento web, tenho
             paixão por criar soluções digitais que combinam funcionalidades

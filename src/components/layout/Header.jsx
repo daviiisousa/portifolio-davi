@@ -1,9 +1,11 @@
+import { IoMdMenu } from "react-icons/io";
+
 export function Header() {
   return (
-    <header className="flex items-center p-3 justify-between w-full  fixed border-b border-gray-300 z-10 bg-white/70 backdrop-blur-md">
+    <header className="flex items-center p-3 justify-between w-full fixed border-b border-gray-300 z-10 bg-white/70 backdrop-blur-md">
       <h1 className="font-bold text-[22px]">Portifolio</h1>
       <nav className="">
-        <ul className="flex gap-5 font-medium">
+        <ul className="flex gap-5 font-medium max-md:hidden">
           <li>
             <a href="#inicio">Início</a>
           </li>
@@ -21,6 +23,7 @@ export function Header() {
           </li>
         </ul>
       </nav>
+      <IoMdMenu size={30} className="text-gray-500 cursor-pointer md:hidden" />
     </header>
   );
 }
