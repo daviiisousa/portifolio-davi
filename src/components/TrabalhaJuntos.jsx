@@ -8,8 +8,34 @@ import { FiSend } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
 import { ScrollAnimation } from "./ui/ScrollAnimation";
+import { useRef, useState } from "react";
+import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
 
 export function TrabalharJuntos() {
+  const form = useRef(null);
+  const [loadingEmail, setLoadingEmail] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoadingEmail(true);
+    emailjs
+      .sendForm(
+        "service_qsuo9la",
+        "template_ixhwsqt",
+        form.current,
+        "byD9OdMvcESAfTtuN"
+      )
+      .then(
+        (_result) => {
+          toast.success("Email enviado com sucesso!");
+          form.current?.reset();
+        },
+        (_error) => {
+          toast.error("Erro ao enviar email.");
+        }
+      );
+  };
   return (
     <section
       id="contato"
@@ -98,7 +124,11 @@ export function TrabalharJuntos() {
             </div>
           </div>
           <div>
-            <form className="p-10 bg-white rounded-md w-full shadow-primary space-y-3 max-sm:p-5">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="p-10 bg-white rounded-md w-full shadow-primary space-y-3 max-sm:p-5"
+            >
               <h2 className="font-bold text-2xl">Envie uma Mensagem</h2>
               <div className="grid grid-cols-2 gap-5 max-sm:grid-cols-1 max-sm:gap-3">
                 <Input
@@ -119,7 +149,7 @@ export function TrabalharJuntos() {
               <Input
                 label={"Assunto"}
                 id={"assunto"}
-                name={"subject"}
+                name={"assunto"}
                 type={"text"}
                 placeholder={"Assunto da mensagem"}
               />
@@ -128,9 +158,11 @@ export function TrabalharJuntos() {
                 id={"mensagem"}
                 name={"message"}
                 type={"text"}
+                isInput={false}
                 placeholder={"Conte-me sobre seu projeto ou ideia"}
               />
               <Button
+                disabled={loadingEmail}
                 theme={"gradient"}
                 type={"submit"}
                 className={"w-full flex items-center justify-center gap-3"}
