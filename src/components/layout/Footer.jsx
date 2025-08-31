@@ -34,7 +34,7 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <div className=" space-y-5">
+      <div className="space-y-5">
         <h2 className="text-2xl font-medium">Navegação</h2>
         <ul className="text-gray-400 space-y-3 text-lg">
           <li>
@@ -54,8 +54,8 @@ export function Footer() {
           </li>
         </ul>
       </div>
-      <div>
-        <h2>Contato</h2>
+      <div className="space-y-5">
+        <h2 className="text-2xl font-medium">Contato</h2>
         <div className="text-gray-400 space-y-3 text-lg">
           <p>sousadavi248@gmail.com</p>
           <p>+55 85 98787-7534</p>

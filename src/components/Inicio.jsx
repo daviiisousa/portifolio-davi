@@ -26,11 +26,15 @@ export function Inicio() {
           Desenvolvedor FullStack apaixonado por criar experiências digitais
           incríveis e soluções inovadoras que fazem a diferença
         </p>
-        <div className=" flex gap-5 my-5 max-sm:flex-col max-sm:items-center">
-          <Button type={"button"} theme={"gradient"}>
+        <div className="w-full flex gap-5 my-5 justify-center max-sm:flex-col max-sm:items-center">
+          <Button
+            type={"button"}
+            theme={"gradient"}
+            className={"max-sm:w-full"}
+          >
             <a href="#projetos"> Ver Meus Projetos</a>
           </Button>
-          <Button type={"button"}>
+          <Button type={"button"} className={"max-sm:w-full"}>
             <a href="curriculo-davi-dev.pdf" download={"certificado-davi.pdf"}>
               Dowload CV
             </a>
