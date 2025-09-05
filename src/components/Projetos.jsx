@@ -5,6 +5,7 @@ import automacaoImg from "../assets/projetos/fotoAutomacao.jpg";
 import TicketGeneretor from "../assets/projetos/ticketGeneretor.png";
 import portifolioImg from "../assets/projetos/portifolio.png";
 import r3fImg from "../assets/projetos/r3f.png";
+import userLoginImg from "../assets/projetos/userLogin.png";
 import { useRef, useState } from "react";
 import { FaRegHandPointRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -148,13 +149,13 @@ export function Projetos() {
 
               <div className="flex-shrink-0 w-[500px] max-sm:w-full">
                 <CardProjetos
-                  img={desculpaAIImg}
+                  img={userLoginImg}
                   titulo={"Usuarios e Autenticação"}
                   descricao={
                     "Sistema de gerenciamento de usuários com autenticação JWT. Permite registro, login e gerenciamento de perfis."
                   }
                   tecnologias={tecnologiasUserLogin}
-                  linkProjeto={"https://github.com/daviiisousa/User-Login"}
+                  linkProjeto={"https://user-login-one.vercel.app/"}
                   linkProjetoGithub={
                     "https://github.com/daviiisousa/User-Login"
                   }
