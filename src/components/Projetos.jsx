@@ -1,7 +1,7 @@
 import { CardProjetos } from "./ui/cardsUI/CardProjetos";
 import desculpaAIImg from "../assets/projetos/desculpaAI.png";
 import todoImg from "../assets/projetos/Todo.png";
-import automacaoImg from "../assets/projetos/fotoAutomacao.jpg";
+import automacaoImg from "../assets/projetos/geradorCertificado.png";
 import TicketGeneretor from "../assets/projetos/ticketGeneretor.png";
 import portifolioImg from "../assets/projetos/portifolio.png";
 import r3fImg from "../assets/projetos/r3f.png";
@@ -31,7 +31,7 @@ export function Projetos() {
     if (!isDragging || !scrollRef.current) return;
     e.preventDefault();
     const x = e.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX) * 1; // velocidade do arrasto
+    const walk = (x - startX) * 1;
     scrollRef.current.scrollLeft = scrollLeft - walk;
   };
 
@@ -72,12 +72,12 @@ export function Projetos() {
   const tecnologiasPortifolio = ["React", "Tailwind", "Vite", "javascript"];
 
   return (
-    <section id="projetos" className="p-10">
+    <section id="projetos" className="p-10 dark:bg-gray-900">
       <ScrollAnimation>
-        <h2 className="text-5xl font-bold text-center mb-3 max-sm:text-4xl">
+        <h2 className="text-5xl font-bold text-center mb-3 max-sm:text-4xl dark:text-white">
           Projetos em Destaque
         </h2>
-        <p className="text-zinc-500 text-lg text-center">
+        <p className="text-zinc-500 dark:text-gray-300 text-lg text-center">
           Uma seleção dos meus trabalhos mais recentes e impactantes
         </p>
         <div className="grid grid-cols-2 my-10 gap-5 py-5 max-lg:flex max-lg:flex-col">
@@ -99,14 +99,14 @@ export function Projetos() {
               "Sistema de automação para geração de certificados personalizados. Preenchimento automático de dados e download dos certificados em PDF."
             }
             tecnologias={tecnologiasAutomacaoCertificados}
-            linkProjeto={"https://github.com/daviiisousa/api-certificado.git"}
+            linkProjeto={"https://gerador-certificado-web.vercel.app/"}
             linkProjetoGithub={
-              "https://github.com/daviiisousa/api-certificado.git"
+              "https://github.com/daviiisousa/gerador-certificado-web"
             }
           />
         </div>
         <ScrollAnimation>
-          <h2 className="py-5 text-4xl font-bold text-center max-sm:text-3xl">
+          <h2 className="py-5 text-4xl font-bold text-center max-sm:text-3xl dark:text-white">
             Outros Projetos
           </h2>
           <motion.div
@@ -120,7 +120,7 @@ export function Projetos() {
           >
             <FaRegHandPointRight
               size={25}
-              className="text-zinc-500 md:hidden mx-auto"
+              className="text-zinc-500 dark:text-gray-400 md:hidden mx-auto"
             />
           </motion.div>
           <div className="w-full py-5">
@@ -130,7 +130,7 @@ export function Projetos() {
               onMouseUp={handleMouseUp}
               onMouseLeave={handleMouseLeave}
               onMouseMove={handleMouseMove}
-              className="flex gap-10 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-zinc-700  scrollbar-thumb-rounded-full select-none "
+              className="flex gap-10 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-zinc-700 dark:scrollbar-thumb-zinc-500 scrollbar-thumb-rounded-full select-none "
             >
               <div className="flex-shrink-0 w-[500px] max-sm:w-full">
                 <CardProjetos

@@ -8,11 +8,11 @@ import { ScrollAnimation } from "./ui/ScrollAnimation";
 
 export function Sobre() {
   return (
-    <section id="sobre" className="p-10 my-10">
+    <section id="sobre" className="p-10 w-full h-full dark:bg-gray-900">
       <ScrollAnimation className="flex flex-col items-center text-center">
         <div>
-          <h1 className="text-5xl font-bold max-sm:text-4xl ">Sobre Mim</h1>
-          <p className="text-2xl mt-5 mb-7 max-w-[800px] text-gray-500 max-lg:text-lg max-sm:text-sm">
+          <h1 className="text-5xl font-bold max-sm:text-4xl dark:text-white">Sobre Mim</h1>
+          <p className="text-2xl mt-5 mb-7 max-w-[800px] text-gray-500 dark:text-gray-300 max-lg:text-lg max-sm:text-sm">
             Sou um desenvolvedor apaixonado por tecnologia e inovação, sempre em
             busca de novos desafios e oportunidades para crescer.
           </p>
@@ -26,14 +26,14 @@ export function Sobre() {
             />
           </div>
           <div className="w-[50%] max-lg:w-full text-left">
-            <p className="text-2xl max-2xl:text-[18px] text-gray-500">
+            <p className="text-2xl max-2xl:text-[18px] text-gray-500 dark:text-gray-300">
               Com mais de 1 ano de experiência em desenvolvimento web, tenho
               paixão por criar soluções digitais que combinam funcionalidades
               expecional com design elegante. Minha jornada começou com
               curiosidade sobre como as coisas funcionam na web, e hoje trabalho
               com as tecnologias mais modernas do mercado.
             </p>
-            <p className="text-2xl my-5 max-2xl:text-[18px] text-gray-500">
+            <p className="text-2xl my-5 max-2xl:text-[18px] text-gray-500 dark:text-gray-300">
               Especializo-me em desenvolvimento FullStack, com foco particular
               em React, Node.js e banco de dados modernos. Acredito que a melhor
               tecnologia é aquela que resolve problemas reais de forma simples e

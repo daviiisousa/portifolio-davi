@@ -9,7 +9,7 @@ export function Input({
 }) {
   return (
     <div className={`flex flex-col gap-1 ${className}`}>
-      <label className="font-medium text-gray-600" htmlFor={id}>
+      <label className="font-medium text-gray-600 dark:text-gray-300" htmlFor={id}>
         {label}
       </label>
       {isInput ? (
@@ -18,7 +18,7 @@ export function Input({
           name={name}
           type={type}
           required
-          className="border border-gray-300 rounded-md px-3 py-1.5"
+          className="border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder={placeholder}
         />
       ) : (
@@ -27,7 +27,7 @@ export function Input({
           name={name}
           required
           rows={6}
-          className="border border-gray-300 rounded-md px-3 py-1.5"
+          className="border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder={placeholder}
         />
       )}

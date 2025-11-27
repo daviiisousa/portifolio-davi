@@ -39,24 +39,24 @@ export function TrabalharJuntos() {
   return (
     <section
       id="contato"
-      className="w-full bg-linear-65 from-blue-50 to-white p-10"
+      className="w-full bg-gradient-to-br from-blue-50 to-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 p-10"
     >
       <ScrollAnimation>
         <div className="flex flex-col items-center justify-center h-full">
-          <h1 className="text-5xl font-bold py-10 text-center w-full max-lg:text-4xl max-lg:py-5">
+          <h1 className="text-5xl font-bold py-10 text-center w-full max-lg:text-4xl max-lg:py-5 dark:text-white">
             Vamos Trabalhar Juntos
           </h1>
-          <p className="text-2xl text-center text-zinc-500 max-w-1/2 mb-10 max-lg:text-lg max-md:text-sm max-sm:max-w-full">
+          <p className="text-2xl text-center text-zinc-500 dark:text-gray-300 max-w-1/2 mb-10 max-lg:text-lg max-md:text-sm max-sm:max-w-full">
             Tem um projeto em mente? Adoraria saber mais sobre sua ideia e como
             posso ajudar a torná-la realidade.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-10 max-md:flex max-md:flex-col ">
           <div className="space-y-3 max-md:text-center">
-            <h2 className="text-4xl font-bold max-sm:text-3xl">
+            <h2 className="text-4xl font-bold max-sm:text-3xl dark:text-white">
               Entre em Contato
             </h2>
-            <p className="text-lg text-zinc-500 max-md:text-sm">
+            <p className="text-lg text-zinc-500 dark:text-gray-300 max-md:text-sm">
               Estou sempre aberto a discutir novos projetos, oportunidades
               criativas ou parcerias. Não hesite em entrar em contato se quiser
               conversar sobre tecnologia, desenvolvimento ou qualquer ideia
@@ -95,14 +95,14 @@ export function TrabalharJuntos() {
               />
             </div>
             <div className="space-y-3">
-              <h3 className="text-[18px] font-medium">Me encontre nas redes</h3>
+              <h3 className="text-[18px] font-medium dark:text-white">Me encontre nas redes</h3>
               <div className="flex gap-2 max-md:justify-center">
                 <a href="https://github.com/daviiisousa" target="_blanck">
                   <IconButton
                     icon={
                       <FiGithub
                         size={50}
-                        className="p-3 rounded-md shadow-primary"
+                        className="p-3 rounded-md shadow-primary dark:shadow-gray-700 dark:bg-gray-700 dark:text-white"
                       />
                     }
                   />
@@ -115,7 +115,7 @@ export function TrabalharJuntos() {
                     icon={
                       <CiLinkedin
                         size={50}
-                        className="p-3 rounded-md shadow-primary text-blue-500"
+                        className="p-3 rounded-md shadow-primary dark:shadow-gray-700 dark:bg-gray-700 text-blue-500"
                       />
                     }
                   />
@@ -127,9 +127,9 @@ export function TrabalharJuntos() {
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="p-10 bg-white rounded-md w-full shadow-primary space-y-3 max-sm:p-5"
+              className="p-10 bg-white dark:bg-gray-800 rounded-md w-full shadow-primary dark:shadow-gray-700 space-y-3 max-sm:p-5"
             >
-              <h2 className="font-bold text-2xl">Envie uma Mensagem</h2>
+              <h2 className="font-bold text-2xl dark:text-white">Envie uma Mensagem</h2>
               <div className="grid grid-cols-2 gap-5 max-sm:grid-cols-1 max-sm:gap-3">
                 <Input
                   label={"Nome"}
