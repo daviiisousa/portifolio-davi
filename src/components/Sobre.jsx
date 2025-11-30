@@ -8,7 +8,7 @@ import { ScrollAnimation } from "./ui/ScrollAnimation";
 
 export function Sobre() {
   return (
-    <section id="sobre" className="p-10 w-full h-full dark:bg-gray-900">
+    <section id="sobre" className="p-20 w-full h-full dark:bg-gray-900">
       <ScrollAnimation className="flex flex-col items-center text-center">
         <div>
           <h1 className="text-5xl font-bold max-sm:text-4xl dark:text-white">Sobre Mim</h1>

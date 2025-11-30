@@ -6,19 +6,91 @@ import { ScrollAnimation } from "./ui/ScrollAnimation";
 
 export function Habilidades() {
   const habilidadesFront = [
-    "React",
-    "Typescript",
-    "Tailwind",
-    "Next",
-    "ContextAPI",
+    {
+      nome: "React",
+      nivel: [1, 2, 3, 4, 5]
+    },
+    {
+      nome: "Typescript",
+      nivel: [1, 2, 3, 4]
+    },
+    {
+      nome: "Tailwind",
+      nivel: [1, 2, 3, 4, 5]
+    },
+    {
+      nome: "Next",
+      nivel: [1, 2, 3, 4]
+    },
+    {
+      nome: "ContextAPI",
+      nivel: [1, 2, 3, 4]
+    },
   ];
-  const habilidadesBack = ["Sequelize", "Node", "Express", "JWT", "Bcrypt"];
-  const habilidadesDatabase = ["Postgres", "Supabase", "MariaDB"];
-  const habilidadesTools = ["Git", "Github", "Jira", "Insomnia", "Bitbucket"];
+  const habilidadesBack = [
+    {
+      nome: "Sequelize",
+      nivel: [1, 2, 3]
+    },
+    {
+      nome: "Node",
+      nivel: [1, 2, 3, 4]
+    },
+    {
+      nome: "Express",
+      nivel: [1, 2, 3, 4]
+    },
+    {
+      nome: "JWT",
+      nivel: [1, 2, 3, 4]
+    },
+    {
+      nome: "Python",
+      nivel: [1, 2, 3]
+    },
+  ];
+
+  const habilidadesDatabase = [
+    {
+      nome: "Postgres",
+      nivel: [1, 2, 3, 4]
+    },
+    {
+      nome: "Supabase",
+      nivel: [1, 2, 3, 4]
+    },
+    {
+      nome: "MariaDB",
+      nivel: [1, 2, 3]
+    },
+  ];
+
+  const habilidadesTools = [
+    {
+      nome: "Git",
+      nivel: [1, 2, 3, 4, 5]
+    },
+    {
+      nome: "Github",
+      nivel: [1, 2, 3, 4, 5]
+    },
+    {
+      nome: "ClickUp",
+      nivel: [1, 2, 3, 4]
+    },
+    {
+      nome: "Insomnia",
+      nivel: [1, 2, 3, 4, 5]
+    },
+    {
+      nome: "Bitbucket",
+      nivel: [1, 2, 3, 4]
+    },
+  ];
   return (
     <section
       id="habilidades"
-      className="bg-gradient-to-br from-blue-50 to-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 p-10"
+      className="bg-gradient-to-br from-blue-50 to-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 p-20"
     >
       <ScrollAnimation>
         <h2 className="text-5xl font-bold text-center mb-5 max-sm:text-4xl dark:text-white">

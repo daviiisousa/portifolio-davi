@@ -27,11 +27,11 @@ export function TrabalharJuntos() {
         "byD9OdMvcESAfTtuN"
       )
       .then(
-        (_result) => {
+        () => {
           toast.success("Email enviado com sucesso!");
           form.current?.reset();
         },
-        (_error) => {
+        () => {
           toast.error("Erro ao enviar email.");
         }
       );
@@ -39,7 +39,7 @@ export function TrabalharJuntos() {
   return (
     <section
       id="contato"
-      className="w-full bg-gradient-to-br from-blue-50 to-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 p-10"
+      className="w-full bg-gradient-to-br from-blue-50 to-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 p-20"
     >
       <ScrollAnimation>
         <div className="flex flex-col items-center justify-center h-full">

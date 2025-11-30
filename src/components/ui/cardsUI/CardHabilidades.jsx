@@ -9,12 +9,18 @@ export function CardHabilidades({ icon, titulo, habilidades }) {
         {habilidades.map((itens) => (
           <li
             key={itens}
-            className="bg-zinc-100 dark:bg-gray-700 dark:text-gray-200 p-3 rounded-md mb-3 font-medium hover:bg-zinc-300 dark:hover:bg-gray-600 transition-all"
+            className="bg-zinc-100 dark:bg-gray-700 dark:text-gray-200 p-3 rounded-md mb-3 font-medium hover:bg-zinc-300 dark:hover:bg-gray-600 transition-all flex items-center justify-between group"
           >
-            {itens}
+            <span>{itens?.nome}</span>
+            <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center gap-2">
+              {itens?.nivel?.map((nivel) => (
+                <span key={nivel} className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></span>
+              ))}
+            </div>
           </li>
         ))}
       </ul>
+
     </div>
   );
 }

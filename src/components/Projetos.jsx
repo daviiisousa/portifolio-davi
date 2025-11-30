@@ -72,7 +72,7 @@ export function Projetos() {
   const tecnologiasPortifolio = ["React", "Tailwind", "Vite", "javascript"];
 
   return (
-    <section id="projetos" className="p-10 dark:bg-gray-900">
+    <section id="projetos" className="p-20 dark:bg-gray-900">
       <ScrollAnimation>
         <h2 className="text-5xl font-bold text-center mb-3 max-sm:text-4xl dark:text-white">
           Projetos em Destaque
