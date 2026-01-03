@@ -5,6 +5,7 @@ import automacaoImg from "../assets/projetos/geradorCertificado.png";
 import TicketGeneretor from "../assets/projetos/ticketGeneretor.png";
 import portifolioImg from "../assets/projetos/portifolio.png";
 import r3fImg from "../assets/projetos/r3f.png";
+import weatherNow from "../assets/projetos/weatherNow.png";
 import userLoginImg from "../assets/projetos/userLogin.png";
 import { useRef, useState } from "react";
 import { FaRegHandPointRight } from "react-icons/fa6";
@@ -201,6 +202,20 @@ export function Projetos() {
                   linkProjeto={"https://poc-r3f-framer.vercel.app/"}
                   linkProjetoGithub={
                     "https://github.com/daviiisousa/poc-R3f-Framer"
+                  }
+                />
+              </div>
+              <div className="flex-shrink-0 w-[500px] max-sm:w-full">
+                <CardProjetos
+                  img={weatherNow}
+                  titulo={"Weather Now"}
+                  descricao={
+                    "Aplicação de previsão do tempo que fornece informações meteorológicas em tempo real para qualquer localização. Integração de API de clima."
+                  }
+                  tecnologias={["JavaScript", "API de Clima", "CSS", "html"]}
+                  linkProjeto={"https://weather-app-main-flax.vercel.app/"}
+                  linkProjetoGithub={
+                    "https://github.com/daviiisousa/weather-app-main"
                   }
                 />
               </div>
