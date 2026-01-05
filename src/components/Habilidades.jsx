@@ -90,7 +90,7 @@ export function Habilidades() {
   return (
     <section
       id="habilidades"
-      className="bg-gradient-to-br from-blue-50 to-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 p-20"
+      className="bg-gradient-to-br from-blue-50 to-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 p-10 md:p-20"
     >
       <ScrollAnimation>
         <h2 className="text-5xl font-bold text-center mb-5 max-sm:text-4xl dark:text-white">

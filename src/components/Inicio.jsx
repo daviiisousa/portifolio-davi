@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { gradient } from "../utils/style";
@@ -10,7 +10,7 @@ export function Inicio() {
       id="inicio"
       className="w-full h-screen py-30 bg-gradient-to-br from-blue-50 to-white max-lg:px-10 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 flex justify-center items-center"
     >
-      <motion.div
+      <Motion.div
         className="w-full flex flex-col justify-center items-center h-full"
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 10 }}
@@ -54,7 +54,7 @@ export function Inicio() {
             <MdEmail className="text-gray-500 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors" size={45} />
           </a>
         </div>
-      </motion.div>
+      </Motion.div>
     </section>
   );
 }

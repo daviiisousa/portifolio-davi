@@ -8,7 +8,7 @@ import r3fImg from "../assets/projetos/r3f.png";
 import weatherNow from "../assets/projetos/weatherNow.png";
 import userLoginImg from "../assets/projetos/userLogin.png";
 import { FaRegHandPointRight } from "react-icons/fa6";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import { ScrollAnimation } from "./ui/ScrollAnimation";
 import { useScroll } from "../hooks/useScroll";
 
@@ -59,7 +59,7 @@ export function Projetos() {
   const tecnologiasPortifolio = ["React", "Tailwind", "Vite", "javascript"];
 
   return (
-    <section id="projetos" className="p-20 dark:bg-gray-900">
+    <section id="projetos" className="p-10 md:p-20 dark:bg-gray-900">
       <ScrollAnimation>
         <h2 className="text-5xl font-bold text-center mb-3 max-sm:text-4xl dark:text-white">
           Projetos em Destaque
@@ -96,7 +96,7 @@ export function Projetos() {
           <h2 className="py-5 text-4xl font-bold text-center max-sm:text-3xl dark:text-white">
             Outros Projetos
           </h2>
-          <motion.div
+          <Motion.div
             initial={{ x: 0 }}
             animate={{ x: 10 }}
             transition={{
@@ -109,7 +109,7 @@ export function Projetos() {
               size={25}
               className="text-zinc-500 dark:text-gray-400 md:hidden mx-auto"
             />
-          </motion.div>
+          </Motion.div>
           <div className="w-full py-5">
             <div
               ref={scrollRef}

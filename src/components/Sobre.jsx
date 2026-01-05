@@ -8,7 +8,7 @@ import { ScrollAnimation } from "./ui/ScrollAnimation";
 
 export function Sobre() {
   return (
-    <section id="sobre" className="p-20 w-full h-full dark:bg-gray-900">
+    <section id="sobre" className="p-10 md:p-20 w-full h-full dark:bg-gray-900">
       <ScrollAnimation className="flex flex-col items-center text-center">
         <div>
           <h1 className="text-5xl font-bold max-sm:text-4xl dark:text-white">Sobre Mim</h1>
@@ -18,9 +18,9 @@ export function Sobre() {
           </p>
         </div>
         <div className="flex w-full h-full gap-10 max-lg:flex-col ">
-          <div className="w-[50%] max-lg:w-full">
+          <div className="w-[50%] max-lg:w-full bg-gray-100 dark:bg-gray-100/10 rounded-2xl">
             <img
-              className="w-full rounded-2xl h-full shadow-2xl transition-all duration-300 ease-in-out hover:rotate-x-50 hover:rotate-z-45 "
+              className="w-full rounded-2xl h-full shadow-2xl transition-all duration-400 ease-in-out hover:rotate-x-50 hover:rotate-z-45 "
               src={imgSobre}
               alt="Computador com codigos"
             />
