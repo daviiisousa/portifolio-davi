@@ -20,7 +20,7 @@ export function Sobre() {
         <div className="flex w-full h-full gap-10 max-lg:flex-col ">
           <div className="w-[50%] max-lg:w-full">
             <img
-              className="w-full rounded-2xl h-full shadow-2xl"
+              className="w-full rounded-2xl h-full shadow-2xl transition-all duration-300 ease-in-out hover:rotate-x-50 hover:rotate-z-45 "
               src={imgSobre}
               alt="Computador com codigos"
             />

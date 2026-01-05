@@ -7,34 +7,20 @@ import portifolioImg from "../assets/projetos/portifolio.png";
 import r3fImg from "../assets/projetos/r3f.png";
 import weatherNow from "../assets/projetos/weatherNow.png";
 import userLoginImg from "../assets/projetos/userLogin.png";
-import { useRef, useState } from "react";
 import { FaRegHandPointRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { ScrollAnimation } from "./ui/ScrollAnimation";
+import { useScroll } from "../hooks/useScroll";
 
 export function Projetos() {
-  const scrollRef = useRef();
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
 
-  const handleMouseDown = (e) => {
-    if (!scrollRef.current) return;
-    setIsDragging(true);
-    setStartX(e.pageX - scrollRef.current.offsetLeft);
-    setScrollLeft(scrollRef.current.scrollLeft);
-  };
-
-  const handleMouseUp = () => setIsDragging(false);
-  const handleMouseLeave = () => setIsDragging(false);
-
-  const handleMouseMove = (e) => {
-    if (!isDragging || !scrollRef.current) return;
-    e.preventDefault();
-    const x = e.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX) * 1;
-    scrollRef.current.scrollLeft = scrollLeft - walk;
-  };
+  const {
+    scrollRef,
+    handleMouseDown,
+    handleMouseUp,
+    handleMouseLeave,
+    handleMouseMove,
+  } = useScroll();
 
   const tecnologiasDesculpaAI = [
     "React",
